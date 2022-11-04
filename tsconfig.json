@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@adapters/*": ["src/adapters/*"],
+      "@atoms": ["src/components/atoms/index.atom.tsxx"],
+      "@molecules": ["src/components/molecules/index.molecule.tsxx"],
+      "@organisms": ["src/components/organisms/index.template.tsxx"],
+      "@templates": ["src/components/templates/index.template.ts"],
+      "@entities/*": ["src/entities/*"],
+      "@hooks": ["src/hooks"],
+      "@infra/*": ["src/infra/*"],
+      "@pages/*": ["src/pages/*"],
+      "@services/*": ["src/services/*"],
+      "@store": ["src/store/index.ts"],
+      "@styles/*": ["src/styles/*"],
+      "@typings/*": ["src/typings/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
